@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { login, logout } from "@/services/auth.service";
+import { login, logout, register } from "@/services/auth.service";
 
 type User = {
   name?: string;

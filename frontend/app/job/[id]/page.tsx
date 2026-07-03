@@ -63,8 +63,8 @@ export default function JobDetailsPage() {
       company: rawData.company ?? rawData.employer ?? "Unknown Company",
       location: rawData.location ?? rawData.city ?? "Remote",
       jobType: rawData.jobType ?? rawData.type ?? "Not specified",
-      experience: rawData.experience != null ? Number(rawData.experience) : null,
-      salary: rawData.salary != null ? Number(rawData.salary) : null,
+      experience: rawData.experience != null ? Number(rawData.experience) : 0,
+      salary: rawData.salary != null ? Number(rawData.salary) : 0,
       description:
         rawData.description ?? rawData.details ?? "No description provided.",
       requirements,
